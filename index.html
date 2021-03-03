@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<style>
+    #img {
+        height: 90vh !important;
+    }
+
+    #navbar {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        z-index: -1;
+    }
+
+    #navbar a {
+        color: #0471A6;
+    }
+
+    #navbar a:hover,
+    #navbar a:focus {
+        color: #D81159;
+        text-decoration: underline;
+    }
+
+    #navbar a.navbar-brand {
+        color: #333;
+    }
+
+    .navbar-nav {
+        flex: 0 2 500px;
+    }
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: flex;
+        font-size: 1.4em;
+        white-space: nowrap;
+    }
+
+    .nav-item {
+        padding: 1em;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    @media only screen and (max-width : 768px) {
+        .navbar-header {
+            float: left;
+        }
+
+        .navbar-nav {
+            float: right;
+        }
+
+        #mobile-nav a {
+            font-size: 9px;
+            color: #0471A6;
+        }
+
+        #whoiam,
+        #njoro,
+        #man {
+            margin: 1px auto;
+            width: 200;
+        }
+
+
+    }
+</style>
+
+<body>
+
+    <nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container nav-mobile">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Samuel</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#heading" class="p-2">Home</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="p-2">About</a>
+                    </li>
+                    <li>
+                        <a href="#about-me" class="p-2">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="p-2">Gallery</a>
+                    </li>
+                </ul>
+            </div><!-- #mobile-nav -->
+        </div>
+    </nav>
+    <div class="container-fluid" id="slider">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img id="img" src="images/slide1.jpg" class="d-inline-flex w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">First slide label</h5>
+                        <p class="text-white">Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img id="img" src="images/img5.jpg" class="d-inline-flex w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">Second slide label</h5>
+                        <p class="text-white">Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="img" src="images/slide2.jpg" class="d-inline-flex w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-white">Third slide label</h5>
+                        <p class="text-white">Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon text-white" aria-hidden="true"></span>
+                <span class="visually-hidden text-white">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon text-white" aria-hidden="true"></span>
+                <span class="visually-hidden text-white">Next</span>
+            </button>
+        </div>
+    </div>
+    <div id="about" data-scroll-index="1" class="section wb">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="message-box">
+                        <h4>Who I am</h4>
+                        <h2>Welcome</h2>
+                        <blockquote class="lead">My name is Samuel Mwai Kimani, </blockquote>
+
+                        <p> I’m a young lawyer, a
+                            community organizer, I have worked with the youths, organized
+                            tournament and volunteered in cleaning our environment.
+                            Going into politics wasn’t in the plan, but after years of the same
+                            representation, we have to ask, who have Njoro been changing
+                            for?
+                            <br>
+                            Everyday gets harder for working families like mine to get
+                            by, no jobs, poor roads and lack of water in almost every
+                            household.It is clear that these changes haven’t been for us, and we deserve
+                            a champion, it’s time to fight for a Njoro that families can be
+                            proud of, that’s why I’m running for a parliamentary position.
+                            <br>
+                            This race is about people versus money, we’ve got the people and
+                            they’ve got money. It time we acknowledge that not all aspirants
+                            for this position care about us, they profit on our struggles, they
+                            don’t live here, don’t take their children to our schools, don’t
+                            drink our water or walk on our roads in a rainy night, and so,
+                            cannot possibly represent us!
+
+                        </p>
+
+                        <a href="#services" data-scroll class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="post-media wow fadeIn ">
+                        <img id="whoiam" width="400" src="images/img7.jpg" alt=""
+                            class=" rounded-circle img-responsive img-rounded">
+
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div>
+
+            <hr class="hr1">
+
+            <div class="row text-center">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-widget">
+                        <div class="post-media_pp wow fadeIn">
+                            <a href="uploads/politic_01.jpg" data-rel="prettyPhoto[gal]"
+                                class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img id="njoro" width="370" height="240" src="images/njoro.jpg" alt=""
+                                class="img-responsive mr-2">
+                            <div class="hover-up">
+                                <h3>Let's work for a better future</h3>
+                                <p>“Mankind will never see an end of trouble until lovers of wisdom come to hold
+                                    political power, or the holders of power become lovers of wisdom.”</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end service -->
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="service-widget">
+                        <div class="post-media_pp wow fadeIn">
+                            <a href="uploads/politic_02.jpg" data-rel="prettyPhoto[gal]"
+                                class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                            <img id="man" width="370" height="240" src="images/gallery_img-03.jpg" alt=""
+                                class="img-responsive">
+                            <div class="hover-up">
+                                <h3>Parliament building was renovated</h3>
+                                <p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed
+                                    leo
+                                    rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
+                            </div>
+                        </div>
+
+                    </div> <!-- end service -->
+                </div>
+                <!--
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+                    crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+                    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+                    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+                    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
